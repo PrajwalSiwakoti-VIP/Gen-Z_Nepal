@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Are The Voice — Gen-Z Nepal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-black via-gray-900 to-red-900 text-white font-sans">
+
+  <!-- Header -->
+  <header class="max-w-6xl mx-auto px-6 py-8 flex items-center justify-between sticky top-0 bg-black/80 z-50">
+    <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">We Are The Voice — Gen-Z Nepal</h1>
+    <nav class="space-x-4 text-sm">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#updates" class="hover:underline">Updates</a>
+      <a href="#tribute" class="hover:underline">Tribute</a>
+      <a href="#help" class="hover:underline">How to Help</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
+      <div class="flex-1">
+        <h2 class="text-4xl md:text-6xl font-black leading-tight tracking-tight" style="letter-spacing: -0.02em;">
+          Angry. Grieving. Unheard.
+        </h2>
+        <p class="mt-6 text-lg md:text-xl text-gray-200 max-w-xl">
+          Nepal’s youth are standing up against censorship, corruption, and injustice. This page amplifies their voices,
+          shares verified updates, and points to peaceful ways to support victims and demand accountability.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#help" class="inline-block bg-red-700 hover:bg-red-600 text-white font-semibold px-5 py-3 rounded-lg shadow-lg">How to Help</a>
+          <button id="donateBtn" class="inline-block border border-red-600 hover:bg-red-800 px-5 py-3 rounded-lg">Donate</button>
+          <a href="https://twitter.com/intent/tweet?text=I%20stand%20with%20Nepal%27s%20Gen-Z.%20Support%20peaceful%20protest,%20demand%20accountability,%20and%20protect%20digital%20rights.%20%23GenZNepal" target="_blank" class="inline-block border border-gray-500 px-5 py-3 rounded-lg hover:bg-gray-800">Share</a>
+        </div>
+      </div>
+      <div class="flex-1">
+        <div class="w-full h-64 md:h-80 rounded-xl bg-gradient-to-b from-red-800 to-black flex items-center justify-center shadow-2xl">
+          <div class="text-center px-6">
+            <div class="text-5xl md:text-6xl font-extrabold">✊</div>
+            <p class="mt-4 text-gray-200">Demand accountability. Protect our future.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="bg-gray-900/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-red-700">
+      <h3 class="text-2xl font-bold border-b border-gray-700 pb-4">Why Gen-Z is Protesting</h3>
+      <p class="mt-4 text-gray-200 leading-relaxed">
+        Protests began when access to critical social platforms was blocked and against corruption. Youth are demanding transparency, digital rights, and justice for those harmed during demonstrations.
+      </p>
+    </div>
+  </section>
+
+  <!-- Updates -->
+  <section id="updates" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-2xl font-bold mb-6">Latest Verified Updates</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <article class="p-6 rounded-xl bg-gradient-to-r from-black/50 to-gray-900 border border-gray-700">
+        <h4 class="font-bold text-lg">Gen-Z protests continue across Kathmandu</h4>
+        <div class="mt-2 text-sm text-gray-400">Kathmandu Post • Sep 8, 2025</div>
+        <a href="https://kathmandupost.com/" target="_blank" class="mt-3 inline-block text-sm underline">Read more</a>
+      </article>
+      <article class="p-6 rounded-xl bg-gradient-to-r from-black/50 to-gray-900 border border-gray-700">
+        <h4 class="font-bold text-lg">Government announces inquiry after clashes</h4>
+        <div class="mt-2 text-sm text-gray-400">The Himalayan Times • Sep 9, 2025</div>
+        <a href="https://thehimalayantimes.com/" target="_blank" class="mt-3 inline-block text-sm underline">Read more</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Tribute -->
+  <section id="tribute" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="bg-black/50 rounded-2xl p-8 border border-red-700">
+      <h3 class="text-2xl font-bold">Tribute & Memorial</h3>
+      <div class="p-4 rounded-lg bg-gray-900/40 mt-4">
+        <h4 class="font-semibold">In memory of protest victims</h4>
+        <p class="text-sm text-gray-400 mt-2">We remember and demand justice.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Help -->
+  <section id="help" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="rounded-2xl p-8 border border-red-700 bg-gradient-to-b from-black/50 to-gray-900">
+      <h3 class="text-2xl font-bold">How You Can Help (Peacefully)</h3>
+      <ul class="mt-4 space-y-4 text-gray-300 list-disc list-inside">
+        <li>Share verified information from trusted sources.</li>
+        <li>Participate in peaceful solidarity actions.</li>
+        <li>Donate to verified organizations supporting youth.</li>
+        <li>Advocate for digital rights and accountability through social media.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Donate Modal -->
+  <div id="donateModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70">
+    <div class="bg-gray-900 rounded-xl p-6 w-full max-w-md border border-red-700">
+      <h4 class="font-bold text-xl">Donate to Support Gen-Z Protest Victims</h4>
+      <p class="mt-3 text-sm text-gray-300">Verified organizations currently helping Gen-Z protesters:</p>
+      <div class="mt-4 space-y-3 text-gray-300">
+        <a href="https://www.unicef.org/nepal/" target="_blank" class="block bg-red-700 px-4 py-3 rounded text-center font-semibold">UNICEF Nepal</a>
+        <a href="https://www.globalgiving.org/projects/support-nepalese-youth/" target="_blank" class="block bg-red-700 px-4 py-3 rounded text-center font-semibold">Global Giving – Nepal Youth Support</a>
+      </div>
+      <div class="mt-4 text-right">
+        <button id="closeDonate" class="px-4 py-2 rounded border">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const donateBtn = document.getElementById('donateBtn');
+    const donateModal = document.getElementById('donateModal');
+    const closeDonate = document.getElementById('closeDonate');
+
+    donateBtn.addEventListener('click', () => {
+      donateModal.classList.remove('hidden');
+      donateModal.classList.add('flex');
+    });
+
+    closeDonate.addEventListener('click', () => {
+      donateModal.classList.add('hidden');
+      donateModal.classList.remove('flex');
+    });
+  </script>
+
+</body>
+</html>
